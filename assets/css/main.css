@@ -954,7 +954,7 @@
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
+		background-color: #2338ec98;
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
@@ -1348,6 +1348,7 @@
 					top: 0;
 					height: 100%;
 					text-decoration: none;
+					border:10px solid beige;
 				}
 
 					#me .pic img {
@@ -1397,7 +1398,7 @@
 					position: absolute;
 					left: 0;
 					top: 0;
-					width: 100%;
+					width: 40%;
 					height: 100%;
 					margin-left: 2.5em;
 				}
@@ -1405,17 +1406,18 @@
 					#me header > h1 {
 						position: absolute;
 						left: 0;
-						bottom: 52.5%;
+						bottom: 72.5%;
 						margin: 0;
 					}
 
 					#me header > p {
-						position: absolute;
+						position: relative;
 						left: 0;
-						top: 52.5%;
+						top:30.5%;
+						/* right: 50%; */
 						font-size: 1.5em;
-						letter-spacing: -0.015em;
-						margin-top: 0;
+						/* letter-spacing: -0.015em; */
+						/* margin-top: 0; */
 					}
 
 		/* Footer */
@@ -1425,6 +1427,37 @@
 				padding: 2em 0 0 0;
 				font-size: 0.75em;
 			}
+
+					/* Contact */
+
+					#contact {
+						padding: 0;
+						height: 20em;
+					}
+		
+						#contact .pic {
+							display: block;
+							position: absolute;
+							right: -1px;
+							top: 0;
+							height: 100%;
+							text-decoration: none;
+							border: 10px solid beige
+						}
+		
+							#contact .pic img {
+								position: relative;
+								display: block;
+								height: 100%;
+							}
+
+				/* Footer */
+		
+					#footer {
+						text-align: center;
+						padding: 2em 0 0 0;
+						font-size: 0.75em;
+					}
 
 	}
 
@@ -1592,7 +1625,9 @@
 		align-items: center;
 	}
 
-li{
+li a.icon{
 	margin-right:20px;
-
+	border-radius: 30px;
+	background-color: #9bb4e4e3;
+	border: 2px solid black;
 }

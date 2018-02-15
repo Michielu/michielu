@@ -49,20 +49,21 @@
 			<article id="me" class="panel">
 				<div class="row">
 					<div class="6u 12u$(mobile)">
-						<!--Used to have header in here-->
-						<h1>Michielu Menning</h1>
+						<header>
+							<h1>Michielu Menning</h1>
 
-						<p>Software Engineer student at Iowa State University. </p>
+							<p>Software Engineer student at Iowa State University. </p>
 
-						<p>Expected graduation May 2019</p>
-						<p>Incoming Boeing IT Intern Summer 2018</p>
+							<p>Expected graduation May 2019</p>
+							<p>Incoming Boeing IT Intern Summer 2018</p>
+						</header>
 					</div>
 					<div class="6u 12u$(mobile)">
 						<a href="#work" class="jumplink pic">
 							<span class="arrow icon fa-chevron-right">
 								<span>See my work</span>
 							</span>
-							<img src="images/me.jpg" alt="" />
+							<img src="images/wws055.png" alt="" />
 						</a>
 					</div>
 				</div>
@@ -145,83 +146,40 @@
 
 			<!-- Contact -->
 			<article id="contact" class="panel">
-				<header>
-					<h2>Contact Me</h2>
-				</header>
-				<form method="POST" name="contactform" action="contact-form-handler.php">
-					<!-- <div>
-						<div class="row">
-							<div class="6u 12u$(mobile)">
-								<input for="name" type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="6u$ 12u$(mobile)">
-								<input type="text" name="email" placeholder="Email" />
-							</div>
-							<div class="12u$">
-								<input type="text" name="subject" placeholder="Subject" />
-							</div>
-							<div class="12u$">
-								<textarea name="message" placeholder="Message" rows="8"></textarea>
-							</div>
-							<div class="12u$">
-								<input type="submit" value="Send Message" />
-							</div>
+
+				<div class="row">
+					<div class="6u 12u$(mobile)">
+						<header>
+							<h2>Contact Me</h2>
+						</header>
+						<form action="mailto:mich.menning@gmail.com" method="post" enctype="text/plain">
+							<input type="submit" value="Send email">
+						</form>
+
+						<div class="social-icons">
+							<ul class="social">
+								<li>
+									<a href="https://github.com/Michielu" class="icon fa-github button style2 soc">
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/michielu-menning-030441110/" class="icon fa-linkedin button style2 soc">
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/michielu.menning" class="icon fa-facebook button style2 soc">
+									</a>
+								</li>
+							</ul>
 						</div>
-					</div> -->
-					<h1>Contact us</h1>
-					<form method="POST" name="contactform" action="contact-form-handler.php">
-						<p>
-							<label for='name'>Your Name:</label>
-							<br>
-							<input type="text" name="name">
-						</p>
-						<p>
-							<label for='email'>Email Address:</label>
-							<br>
-							<input type="text" name="email">
-							<br>
-						</p>
-						<p>
-							<label for='message'>Message:</label>
-							<br>
-							<textarea name="message"></textarea>
-						</p>
-						<input type="submit" value="Submit">
-						<br>
-					</form>
-				</form>
-				<div class="social-icons">
-					<ul class="social">
-						<li>
-							<a href="https://github.com/Michielu" class="icon fa-github button style2 soc">
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/michielu-menning-030441110/" class="icon fa-linkedin button style2 soc">
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/michielu.menning" class="icon fa-facebook button style2 soc">
-							</a>
-						</li>
-					</ul>
+					</div>
+					<div class="6u 12u$(mobile)">
+						<a href="#work" class="jumplink pic">
+							<img src="images/me.jpg" alt="" />
+						</a>
+					</div>
 				</div>
-				<!-- <div class="row social-media">
-					<div class="4u 6u$(mobile)">
-						<a href="https://github.com/Michielu" class="icon fa-github button style2 soc">
-						</a>
-						<div class="btn-facebook">
-						</div>
-					</div>
-					<div class="2u 6u$(mobile)">
-						<a href="https://www.linkedin.com/in/michielu-menning-030441110/" class="icon fa-linkedin button style2 soc">
-						</a>
-					</div>
-					<div>
-						<a href="https://www.facebook.com/michielu.menning" class="icon fa-facebook button style2 soc">
-						</a>
-					</div>
-				</div> -->
+
 			</article>
 
 		</div>
@@ -245,15 +203,6 @@
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
 	<!-- In the fiture change to <script src="assets/js/form-validate.js"></script> -->
-	<script language="JavaScript">
-		// Code for validating the form
-		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-		// for details
-		var frmvalidator = new Validator("contactform");
-		frmvalidator.addValidation("name", "req", "Please provide your name");
-		frmvalidator.addValidation("email", "req", "Please provide your email");
-		frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
-	</script>
 </body>
 
 </html>
