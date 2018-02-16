@@ -952,7 +952,9 @@
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #2338ec98;
+		background-color: rgba(1, 89, 197, 0.74);
+		margin-right:20px;
+		border-radius: 30px;
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
@@ -968,7 +970,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: rgba(52, 144, 255, 0.74);
 		}
 
 		input[type="button"]:active,
@@ -1628,10 +1630,3 @@
 		margin-right:20px;
 		align-items: center;
 	}
-
-li a.icon{
-	margin-right:20px;
-	border-radius: 30px;
-	background-color: #9bb4e4e3;
-	border: 2px solid black;
-}
