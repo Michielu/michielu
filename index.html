@@ -76,12 +76,12 @@
 				</header>
 
 				<div class="tab">
-					<button class="tablinks" onclick="switchWork(event, 'Union_Pacific')" id="defaultOpen">Union Pacific</button>
+					<button class="tablinks" onclick="switchWork(event, 'Union_Pacific')" id="defaultWorkOpen">Union Pacific</button>
 					<button class="tablinks" onclick="switchWork(event, 'PTC')">PTC</button>
 					<button class="tablinks" onclick="switchWork(event, 'Boeing')">Boeing</button>
 				</div>
 
-				<div id="Union_Pacific" class="tabcontent">
+				<div id="Union_Pacific" class="work-tabcontent">
 					<div class="row">
 						<div class="6u 12u$(mobile)">
 							<a href="#" class="image fit">
@@ -90,11 +90,7 @@
 						</div>
 						<div class="6u 12u$(mobile) ">
 							<p>Union Pacific: Summer 2017</p>
-							<a href="#project" class="jumplink pic">
-								<span class="arrow icon fa-chevron-right">
-									<span>See my work</span>
-								</span>
-							</a>
+
 							<div class="job-description">
 								<li>Designed and implemented an AngularJS component to improve how demos are displayed</li>
 								<li>Incrementally upgraded a multi-user live application without any downtime</li>
@@ -105,8 +101,7 @@
 					</div>
 				</div>
 
-				<div id="PTC" class="tabcontent">
-					<h3>PTC</h3>
+				<div id="PTC" class="work-tabcontent">
 					<div class="row">
 						<div class="6u 12u$(mobile)">
 							<a href="#" class="image fit">
@@ -124,8 +119,7 @@
 					</div>
 				</div>
 
-				<div id="Boeing" class="tabcontent">
-					<h3>Boeing</h3>
+				<div id="Boeing" class="work-tabcontent">
 					<div class="row">
 						<div class="6u 12u$(mobile)">
 							<a href="#" class="image fit">
@@ -142,85 +136,107 @@
 						</div>
 					</div>
 				</div>
+
+				<a href="#project" class="jumplink pic">
+					<span class="arrow icon fa-chevron-right">
+						<span>See my work</span>
+					</span>
+				</a>
 			</article>
 
 			<!--Project-->
 			<article id="project" class="panel">
-				<div class="row">
-					<section>
-						<div class="row">
-							<div class="6u 12u$(mobile)">
-								<a href="#" class="image fit">
-									<img src="images/Cy_02.png" alt="">
-								</a>
-							</div>
-							<div class="6u 12u$(mobile) ">
-								<p>Cy Sliding Puzzle</p>
-								<div class="project-description">
-									<li>Developer for a puzzle game project using React.js.</li>
-									<li>Used a JavaScript library, React.js to create a client-side web game</li>
-									<li>Collaborated with a team member to visualize and create an image puzzle game</li>
-									<a href="https://michielu.github.io/cy-sliding-puzzle/">Cy Sliding Puzzle</a>
-									<br/>
-									<a href="https://github.com/Michielu/cy-sliding-puzzle">Github</a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="6u 12u$(mobile)">
-								<a href="#" class="image fit">
-									<img src="images/rsb_logo.png" alt="">
-								</a>
-							</div>
-							<div class="6u 12u$(mobile)">
-								<p>Ready, Set, Ball!</p>
-								<div class="project-description">
-									<li>Lead front end developer for a semester long project using React.js</li>
-									<li>Help connect athletes of all levels to play different sports anywhere.</li>
-									<a href="https://docs.google.com/presentation/d/1lMB3aJVNOsMTh5WZJuuI7iYQscCiKSTe1RokapE96nA/edit?usp=sharing">View poster</a>
-									<br/>
-									<a href="https://github.com/Don-V/rsb-web-front">Github</a>
-									<br/>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="6u 12u$(mobile)">
-								<a href="#" class="image fit">
-									<img src="images/nogo.png" alt="">
-								</a>
-							</div>
-							<div class="6u$ 12u$(mobile)">
-								<p>Nogo: Chrome Extention</p>
-								<div class="project-description">
-									<li>Used chrome API’s to filter http requests to block unwanted sites</li>
-									<li>Communicated with front-end developers to orchestrate an efficient extention</li>
-									<a href="https://github.com/Don-V/nogo">Github</a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="6u 12u$(mobile)">
-								<a href="#" class="image fit">
-									<img src="images/Light_5.png" alt="">
-								</a>
-							</div>
-							<div class="6u$ 12u$(mobile)">
-								<p>Light</p>
-								<div class="project-description">
-									<li>Project Manager and Lead Developer for a semester long project at Iowa State Univ. (Spring Semester 2016)</li>
-									<li>Managed the creation of a Java based 2D application from scratch</li>
-									<a href="https://github.com/Michielu/CPRE186">Github</a>
-								</div>
-							</div>
-						</div>
-					</section>
-					<a href="#resume" class="jumplink pic">
-						<span class="arrow icon fa-chevron-right">
-							<span>See my resume</span>
-						</span>
-					</a>
+				<header>
+					<h2>Projects</h2>
+				</header>
+				<div class="tab">
+					<button class="proj-tablinks" onclick="switchProject(event, 'cy-slide')" id="defaultProjOpen">Cy-Puzzle</button>
+					<button class="proj-tablinks" onclick="switchProject(event, 'RSB')">RSB</button>
+					<button class="proj-tablinks" onclick="switchProject(event, 'no-go')">No-go</button>
+					<button class="proj-tablinks" onclick="switchProject(event, 'light')">Light</button>
+
 				</div>
+
+				<div id="cy-slide" class="proj-tabcontent">
+					<div class="row">
+						<div class="6u 12u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/Cy_02.png" alt="">
+							</a>
+						</div>
+						<div class="6u 12u$(mobile) ">
+							<p>Cy Sliding Puzzle</p>
+							<div class="project-description">
+								<li>Developer for a puzzle game project using React.js.</li>
+								<li>Used a JavaScript library, React.js to create a client-side web game</li>
+								<li>Collaborated with a team member to visualize and create an image puzzle game</li>
+								<a href="https://michielu.github.io/cy-sliding-puzzle/">Cy Sliding Puzzle</a>
+								<br/>
+								<a href="https://github.com/Michielu/cy-sliding-puzzle">Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="RSB" class="proj-tabcontent">
+					<div class="row">
+						<div class="6u 12u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/rsb_logo.png" alt="">
+							</a>
+						</div>
+						<div class="6u 12u$(mobile)">
+							<p>Ready, Set, Ball!</p>
+							<div class="project-description">
+								<li>Lead front end developer for a semester long project using React.js</li>
+								<li>Help connect athletes of all levels to play different sports anywhere.</li>
+								<a href="https://docs.google.com/presentation/d/1lMB3aJVNOsMTh5WZJuuI7iYQscCiKSTe1RokapE96nA/edit?usp=sharing">View poster</a>
+								<br/>
+								<a href="https://github.com/Don-V/rsb-web-front">Github</a>
+								<br/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="no-go" class="proj-tabcontent">
+					<div class="row">
+						<div class="6u 12u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/nogo.png" alt="">
+							</a>
+						</div>
+						<div class="6u$ 12u$(mobile)">
+							<p>Nogo: Chrome Extention</p>
+							<div class="project-description">
+								<li>Used chrome API’s to filter http requests to block unwanted sites</li>
+								<li>Communicated with front-end developers to orchestrate an efficient extention</li>
+								<a href="https://github.com/Don-V/nogo">Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="light" class="proj-tabcontent">
+					<div class="row">
+						<div class="6u 12u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/Light_5.png" alt="">
+							</a>
+						</div>
+						<div class="6u$ 12u$(mobile)">
+							<p>Light</p>
+							<div class="project-description">
+								<li>Project Manager and Lead Developer for a semester long project at Iowa State Univ. (Spring Semester 2016)</li>
+								<li>Managed the creation of a Java based 2D application from scratch</li>
+								<a href="https://github.com/Michielu/CPRE186">Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#resume" class="jumplink pic">
+					<span class="arrow icon fa-chevron-right">
+						<span>See my resume</span>
+					</span>
+				</a>
 			</article>
 
 			<!--Resume-->
@@ -290,11 +306,10 @@
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
-	<!-- In the fiture change to <script src="assets/js/form-validate.js"></script> -->
 	<script>
 		function switchWork(evt, cityName) {
 			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
+			tabcontent = document.getElementsByClassName("work-tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 				tabcontent[i].style.display = "none";
 			}
@@ -306,8 +321,24 @@
 			evt.currentTarget.className += " active";
 		}
 
+		function switchProject(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("proj-tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("proj-tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
 		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
+		document.getElementById("defaultWorkOpen").click();
+		document.getElementById("defaultProjOpen").click();
+
 	</script>
 </body>
 
