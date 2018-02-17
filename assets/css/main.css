@@ -966,7 +966,7 @@
 	}
 
 		input[type="button"]:hover,
-		input[type="submit"]:hover,
+		input[type="submit"]:hover, 
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
@@ -1434,28 +1434,60 @@
 				font-size: 0.75em;
 			}
 
-					/* Contact */
+			/* Contact */
 
-					#contact {
-						padding: 0;
-						height: 20em;
-					}
-		
-						#contact .pic {
-							display: block;
-							position: absolute;
-							right: -1px;
-							top: 0;
-							height: 100%;
-							text-decoration: none;
-							border: 10px solid beige
-						}
-		
-							#contact .pic img {
-								position: relative;
-								display: block;
-								height: 100%;
-							}
+			#contact {
+				padding: 0;
+				height: 20em;
+			}
+
+			#contact .pic {
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+				border: 10px solid beige
+			}
+
+			#contact .pic img {
+				position: relative;
+				display: block;
+				height: 100%;
+			}
+
+										
+			#contact header {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 40%;
+				height: 100%;
+				margin-left: 2.5em;
+				text-align: center;
+
+			}
+
+			#contact header > h1 {
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+				padding-top: 50px;
+			}
+
+
+			.social{
+				display: inline-flex;
+				padding-top: 200px;
+				padding-left: 20%;
+				
+			}
+
+
+			.social-icons{
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 				/* Footer */
 		
@@ -1623,10 +1655,4 @@
 	}
 	.job-description{
 		font-size: 15px;
-	}
-
-	.social{
-		display: inline-flex;
-		margin-right:20px;
-		align-items: center;
 	}
