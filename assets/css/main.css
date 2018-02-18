@@ -1694,3 +1694,12 @@
     border: 1px solid #ccc;
     border-top: none;
 }
+
+.work-tabcontent  header > p{
+	font-size: 1.5em;
+}
+
+.proj-tabcontent header>p{
+	font-size: 1.5em;
+}
+
