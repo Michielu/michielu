@@ -1611,8 +1611,6 @@
 	/* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: black;
 }
 
 /* Style the buttons inside the tab */
@@ -1624,7 +1622,8 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+	font-size: 17px;
+	color: black;
 }
 
 /* Change background color of buttons on hover */
