@@ -1430,6 +1430,11 @@
 						/* margin-top: 0; */
 					}
 
+		/*Resume*/
+		.resume-hide{
+			display: none;
+		}
+
 		/* Footer */
 
 			#footer {
@@ -1441,16 +1446,9 @@
 
 			.social{
 				display: inline-flex;
-				/* padding-top: 200px; */
 				padding-left: 33%;
 				
 			}
-
-			.social-icons{
-				margin-left: auto;
-				margin-right: auto;
-			}
-
 	}
 
 /* Mobile */
@@ -1463,7 +1461,7 @@
 				font-size: 11pt;
 				line-height: 1.75em;
 			}
-
+	
 			h1, h2 {
 				font-size: 1.75em;
 				letter-spacing: -0.025em;
@@ -1501,6 +1499,18 @@
 					margin-top: 0;
 				}
 
+		.social{
+			display: inline-flex;
+			/* padding-top: 200px; */
+			padding-left: 33%;
+			
+		}
+		
+		.social-icons{
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		/* Button */
 
 			input[type="button"],
@@ -1508,11 +1518,12 @@
 			input[type="reset"],
 			button,
 			.button {
-				display: block;
+				/* display: inline-block; */
 				width: 100%;
-				padding: 0.75em 0 0.75em 0;
+				padding: 14px;
 				text-align: center;
 			}
+
 
 		/* Wrapper */
 
@@ -1590,6 +1601,12 @@
 					font-size: 1.25em;
 				}
 
+		/*Resume*/
+		.resume-show{
+			display:none;
+		}
+
+
 		/* Footer */
 
 			#footer {
@@ -1607,9 +1624,9 @@
 					}
 
 	}
-	.job-description{
-		font-size: 15px;
-	}
+.job-description{
+	font-size: 15px;
+}
 
 
 	/* Style the tab */
@@ -1655,4 +1672,3 @@
 .proj-tabcontent header>p{
 	font-size: 1.5em;
 }
-
