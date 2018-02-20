@@ -1431,7 +1431,7 @@
 					}
 
 		/*Resume*/
-		.resume-hide{
+		.mobile-hide{
 			display: none;
 		}
 
@@ -1602,7 +1602,7 @@
 				}
 
 		/*Resume*/
-		.resume-show{
+		.mobile-show{
 			display:none;
 		}
 
