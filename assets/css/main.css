@@ -747,7 +747,7 @@
 /* Basic */
 
 	body {
-		background: linear-gradient(to bottom right,  #C9C0BB, green);
+		background: linear-gradient(to bottom right,  #C9C0BB, rgb(12, 67, 150));
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #777777;
